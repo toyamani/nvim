@@ -41,3 +41,8 @@ repo = 'airblade/vim-gitgutter'
 [[plagins]]
 repo = 'tpope/vim-fugitive'
 
+#
+# not install
+#
+[[plagins]]
+repo = 'Townk/vim-autoclose'
