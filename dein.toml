@@ -1,0 +1,42 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+#
+# color scheme
+#
+[[plugins]]
+repo = 'cocopon/iceberg.vim'
+hook_add = '''
+augroup SetColorScheme 
+    au!
+    au VimEnter * nested colorscheme iceberg
+augroup END
+'''
+ # colorscheme 設定は source 後に行う必要があるので確実に読まれている VimEnter のタイミングで行う。
+ # 但し Colorscheme イベントの発生が抑制されないよう nented を付ける。
+
+#
+# syntax
+#
+[[plugins]] # toml syntax
+repo = 'cespare/vim-toml'
+on_ft = 'toml'
+
+#
+# File Tree
+#
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+hook_add = '''
+  autocmd VimEnter * execute 'NERDTree'
+'''
+
+#
+# git
+#
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+
+[[plagins]]
+repo = 'tpope/vim-fugitive'
+
