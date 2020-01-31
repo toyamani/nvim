@@ -1,10 +1,4 @@
 "
-" テーマ
-"
-
-
-
-"
 " 文字エンコード
 "
 set encoding=utf-8 " ファイル読み込み時の文字コード
@@ -50,11 +44,19 @@ nnoremap <S-l> $
 " インサートモード
 "
 inoremap jj <esc>
-inoremap <C-k> <Up>
-inoremap <C-j> <Down>
-inoremap <C-h> <Left>
-inoremap <C-l> <Right>
+inoremap <C-p> <Up>
+inoremap <C-n> <Down>
+inoremap <C-e> <Left>
+inoremap <C-f> <Right>
+inoremap <C-h> <left><Delete>
 
+"
+" 補完
+"
+inoremap { {}<Left>
+inoremap {<Enter> {}<Left><CR><ESC><S-o>
+inoremap ( ()<ESC>i
+inoremap (<Enter> ()<Left><CR><ESC><S-o>
 "
 " コマンドモード
 "
