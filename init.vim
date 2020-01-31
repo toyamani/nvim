@@ -46,9 +46,10 @@ nnoremap <S-l> $
 inoremap jj <esc>
 inoremap <C-p> <Up>
 inoremap <C-n> <Down>
-inoremap <C-e> <Left>
+inoremap <C-b> <Left>
 inoremap <C-f> <Right>
-inoremap <C-h> <left><Delete>
+inoremap <C-e> <C-o>$
+inoremap <C-a> <C-o>^
 
 "
 " 補完
