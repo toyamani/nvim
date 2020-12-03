@@ -25,11 +25,11 @@ on_ft = 'toml'
 #
 # File Tree
 #
-[[plugins]]
-repo = 'scrooloose/nerdtree'
-hook_add = '''
-  map <C-n> :NERDTreeToggle<CR>
-  autocmd VimEnter * execute 'NERDTree'
+# [[plugins]]
+# repo = 'scrooloose/nerdtree'
+# hook_add = '''
+#  map <C-n> :NERDTreeToggle<CR>
+#  autocmd VimEnter * execute 'NERDTree'
 '''
 
 #
