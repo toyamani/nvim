@@ -5,22 +5,22 @@ repo = 'Shougo/dein.vim'
 # color scheme
 #
 [[plugins]]
-repo = 'cocopon/iceberg.vim'
 hook_add = '''
 augroup SetColorScheme 
     au!
     au VimEnter * nested colorscheme iceberg
 augroup END
 '''
- # colorscheme 設定は source 後に行う必要があるので確実に読まれている VimEnter のタイミングで行う。
- # 但し Colorscheme イベントの発生が抑制されないよう nented を付ける。
+repo = 'cocopon/iceberg.vim'
+# colorscheme 設定は source 後に行う必要があるので確実に読まれている VimEnter のタイミングで行う。
+# 但し Colorscheme イベントの発生が抑制されないよう nented を付ける。
 
 #
 # syntax
 #
 [[plugins]] # toml syntax
-repo = 'cespare/vim-toml'
 on_ft = 'toml'
+repo = 'cespare/vim-toml'
 
 #
 # File Tree
@@ -30,7 +30,7 @@ on_ft = 'toml'
 # hook_add = '''
 #  map <C-n> :NERDTreeToggle<CR>
 #  autocmd VimEnter * execute 'NERDTree'
-'''
+#  '''
 
 #
 # git
