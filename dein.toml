@@ -25,12 +25,13 @@ repo = 'cespare/vim-toml'
 #
 # File Tree
 #
-# [[plugins]]
-# repo = 'scrooloose/nerdtree'
-# hook_add = '''
-#  map <C-n> :NERDTreeToggle<CR>
-#  autocmd VimEnter * execute 'NERDTree'
-#  '''
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+hook_add = '''
+ map <C-n> :NERDTreeToggle<CR>
+'''
+# if you want to run NERDTree on startup nvim, comment out below.
+# autocmd VimEnter * execute 'NERDTree'
 
 #
 # git
