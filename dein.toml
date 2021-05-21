@@ -47,3 +47,9 @@ repo = 'tpope/vim-fugitive'
 #
 [[plagins]]
 repo = 'Townk/vim-autoclose'
+
+# Markdown preview
+[[plugins]]
+repo = 'iamcco/markdown-preview.nvim'
+on_ft = [ 'markdown', 'pandoc.markdown', 'rmd' ]
+build = 'sh -c "cd app & npm install" '
