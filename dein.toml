@@ -21,6 +21,8 @@ repo = 'Shougo/dein.vim'
 [[plugins]] # toml syntax
 on_ft = 'toml'
 repo = 'cespare/vim-toml'
+[[plugins]]
+repo = 'w0rp/ale'
 
 #
 # File Tree
@@ -48,8 +50,33 @@ repo = 'tpope/vim-fugitive'
 [[plagins]]
 repo = 'Townk/vim-autoclose'
 
-# Markdown preview
+#
+#  comment out
+#
 [[plugins]]
+repo = 'tpope/vim-commentary'
+
+#
+# status bar
+#
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+
+#
+# status bar (color)
+#
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+
+#
+# Markdown Preview
+#
+[[plugins]]
+repo = 'skanehira/preview-markdown.vim'
+
+[[plugins]]
+on_ft = ['markdown', 'pandoc.markdown', 'rmd']
 repo = 'iamcco/markdown-preview.nvim'
-on_ft = [ 'markdown', 'pandoc.markdown', 'rmd' ]
-build = 'sh -c "cd app & npm install" '
+hook_add = ''' 
+  map <C-s> <Plug>MarkdownPreviewToggle
+'''

@@ -29,7 +29,7 @@ set hlsearch " 検索結果をハイライト
 "
 set number " 行番号を表示
 set showmatch " 括弧の対応関係を一瞬表示する
-
+set nowrap " 折返ししない
 
 "
 " 移動
@@ -58,6 +58,8 @@ inoremap { {}<Left>
 inoremap {<Enter> {}<Left><CR><ESC><S-o>
 inoremap ( ()<ESC>i
 inoremap (<Enter> ()<Left><CR><ESC><S-o>
+inoremap [ []<ESC>i
+inoremap [<Enter> []<Left><CR><ESC><S-o>
 
 "
 " コマンドモード
@@ -65,7 +67,17 @@ inoremap (<Enter> ()<Left><CR><ESC><S-o>
 set wildmenu " コマンドモードの補完
 set history=5000 " 保存するコマンド履歴の数
 
+"
+" vim-airline setting
+" 
+let g:airline_theme = 'bubblegum'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
 
+"
+" Preview Markdown
+"
+let g:preview_markdown_parser= 'glow'
 
 "dein Scripts-----------------------------
 if &compatible
